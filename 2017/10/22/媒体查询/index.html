@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>媒体查询 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="琐碎的东西搞完了 该弄正事了发现越来越多的人不希望使用框架完整响应式设计，要求使用媒体查询完整 @media (max-width: 768px){    html{background-color: #799AFF;font-size: 10px;}    ul{display: none;}    .itemMenu{display: block;}}/平板768-992/@media (mi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="媒体查询">
+<meta property="og:url" content="http://yoursite.com/2017/10/22/媒体查询/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="琐碎的东西搞完了 该弄正事了发现越来越多的人不希望使用框架完整响应式设计，要求使用媒体查询完整 @media (max-width: 768px){    html{background-color: #799AFF;font-size: 10px;}    ul{display: none;}    .itemMenu{display: block;}}/平板768-992/@media (mi">
+<meta property="og:updated_time" content="2017-10-22T08:21:38.013Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="媒体查询">
+<meta name="twitter:description" content="琐碎的东西搞完了 该弄正事了发现越来越多的人不希望使用框架完整响应式设计，要求使用媒体查询完整 @media (max-width: 768px){    html{background-color: #799AFF;font-size: 10px;}    ul{display: none;}    .itemMenu{display: block;}}/平板768-992/@media (mi">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-媒体查询" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/10/22/媒体查询/" class="article-date">
+  <time datetime="2017-10-22T07:34:27.000Z" itemprop="datePublished">2017-10-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      媒体查询
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h5 id="琐碎的东西搞完了-该弄正事了"><a href="#琐碎的东西搞完了-该弄正事了" class="headerlink" title="琐碎的东西搞完了 该弄正事了"></a>琐碎的东西搞完了 该弄正事了</h5><p>发现越来越多的人不希望使用框架完整响应式设计，要求使用媒体查询完整</p>
+<p>@media (max-width: 768px){<br>    html{background-color: #799AFF;font-size: 10px;}<br>    ul{display: none;}<br>    .itemMenu{display: block;}<br>}<br>/<em>平板768-992</em>/<br>@media (min-width: 768px) and (max-width:992px){<br>    html{background-color: gold;font-size: 12px;}<br>    ul{display: none;}<br>    .itemMenu{display: block;}<br>}<br>/<em>笔记本992-1200</em>/<br>@media (min-width: 992px) and (max-width:1200px){<br>    html{background-color:red;font-size: 16px;}<br>    ul{display: block;}<br>    .itemMenu{display: none;}<br>}<br>/<em>台式机显示器</em>/<br>@media (min-width: 1200px){<br>    html{background-color:#9A7A34;font-size: 20px;}<br>    ul{display: block;}<br>    .itemMenu{display: none;}<br>}</p>
+<p>用于设置移动端 显示内容窗口的配置</p>
+<p><meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no"><br>    兼容性：<br>    1、加载处理不兼容的脚本文件</p>
+<pre><code>&lt;!--[if lt IE 9]&gt;
+&lt;script src=&quot;https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js&quot;&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+2、更改IE浏览器渲染内容时使用的内核
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot;content=&quot;IE=Edge,chrome=1&quot;&gt;
+display：flex设置为弹性盒
+flex-direction:设置弹性盒内 子元素的排列方向
+
+属性值：
+row
+row-reverse
+column
+column-reverse
+justify-content:设置水平方向的排布方式
+
+属性值：
+flex-start默认
+flex-end 设置结束点对齐
+center 设置以中心点对齐
+space-between设置水平方向的间距平均分配
+space-around：设置水平方向平均分配，并且起始点和结束点都占间距的一半；
+align-items:设置垂直方向的排列方式
+
+属性值：
+flex-start baseline stretch以起始点的位置排列
+flex-end：以结束点对齐
+center：垂直方向居中
+align-content：
+
+属性值
+flex-start：默认设置起始点位置对齐
+flex-end：设置以结束点对齐
+center：以中心点对齐
+space-between：设置垂直方向的间距平均分配
+space-around：设置垂直方向平均分配，并且起始点和结束点都占间距的一半；
+order:给元素重新排序 数值越小的 越在前边
+fiex:可设置元素在父元素中所占的比例
+
+
+好好看 好好学
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/10/22/媒体查询/" data-id="cj92hiunn0000bsqsk22tg57p" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/10/18/闭包的小知识/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title">闭包的小知识</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Articles récents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/10/22/媒体查询/">媒体查询</a>
+          </li>
+        
+          <li>
+            <a href="/2017/10/18/闭包的小知识/">闭包的小知识</a>
+          </li>
+        
+          <li>
+            <a href="/2017/10/17/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
